@@ -1,0 +1,71 @@
+1.List the contents of the departments table.
+
+SELECT * FROM DEPARTMENTS;
+
+2.List the names of all departments whose name starts with “A‟.
+
+SELECT * FROM DEPARTMENTS WHERE DEPARTMENT_NAME LIKE 'A%';
+
+3.List the name and manager_id of all departments whose name ends with “S‟ and managed by manager With the id=204.
+
+SELECT * FROM DEPARTMENTS WHERE DEPARTMENT_NAME LIKE 'S%' AND MANAGER_ID=204;
+
+4.List all employees that work for department 100.
+
+SELECT * FROM EMPLOYEES WHERE DEPARTMENT_ID=100;
+
+5.List all employees that work for department 100 and have a salary greater than 3500.
+
+SELECT * FROM EMPLOYEES WHERE DEPARTMENT_ID = 100 AND SALARY > 3500;
+
+6.List all employees that work for department 100 or have a salary greater than 3500.
+
+SELECT * FROM EMPLOYEES WHERE DEPARTMENT_ID = 100 OR SALARY > 3500;
+
+7.List the names (first and last) of all employees in ascending order according to their first_name.
+
+SELECT FIRST_NAME, LAST_NAME FROM EMPLOYEES ORDER BY FIRST_NAME ASC;
+
+8.List the names(first and last) of all employees in descending order according to their salary.
+
+SELECT FIRST_NAME, LAST_NAME FROM EMPLOYEES ORDER BY SALARY DESC;
+
+9.List all employees in ascending order according to their department and descending order according to their salary.
+
+SELECT * FROM EMPLOYEES ORDER BY DEPARTMENT_ID,SALARY DESC;
+
+10.List the names of all employees with the heading “Employee Name”.
+
+SELECT EMPLOYEES.FIRST_NAME AS 'Employee Name' FROM EMPLOYEES;
+
+12. List the first name and salary*10000 of all employees. That is the salary stored in the table is multiplied by 10000. Note that this does not change the stored value.
+
+SELECT FIRST_NAME,SALARY*10000 FROM EMPLOYEES;
+
+14.List all employees hired after “01-JAN-2006‟.
+
+SELECT * FROM EMPLOYEES WHERE HIRE_DATE > '2006-01-01';
+
+15.List all employees who were hired between “01-JAN-2005‟ and “31-DEC-2005‟ for department with No=30.
+
+SELECT * FROM EMPLOYEES WHERE DEPARTMENT_ID=30 AND HIRE_DATE BETWEEN '2006-01-01' AND '2007-01-01';
+
+16.List all employees that do not have a manager.
+
+SELECT * FROM EMPLOYEES WHERE MANAGER_ID IS NULL;
+
+17.List all employees that have a manager.
+
+SELECT * FROM EMPLOYEES WHERE MANAGER_ID;
+
+18.Find the average salary of all employees.
+
+SELECT AVG(SALARY) FROM EMPLOYEES;
+
+19.Find the minimum salary of all employees.
+
+SELECT MIN(SALARY) FROM EMPLOYEES;
+
+20.Find the sum of all salaries of all employees.
+
+SELECT SUM(SALARY) FROM EMPLOYEES;
