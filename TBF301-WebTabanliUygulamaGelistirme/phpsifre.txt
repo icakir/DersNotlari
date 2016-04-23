@@ -1,0 +1,40 @@
+
+PHP ÝLE KULLANICI ADI VE ÞÝFRE DENETÝMÝ
+
+---index.htm---
+
+<html>
+<body>
+
+<form method="post" action="onay.php">
+Kulanýcý Adý :<input type="text" name="ad">
+<br>
+Þifre :<input type="password" name="sifre">
+<br>
+<input type="submit" value="GÝRÝÞ">
+</form>
+
+</body>
+</html>
+
+
+---onay.php---
+
+//Kullanýcý adý:admin ve parola:1234 olsun.
+
+
+<?
+$kullanici=$_POST[ad];
+$parola=$_POST[sifre];
+
+if($kullanici=="admin" && $parola=="1234")
+{
+echo("Þifre Doðru");
+}
+else
+{
+echo("Þifre HATALI");
+}
+?>
+
+
