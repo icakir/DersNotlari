@@ -1,6 +1,3 @@
-![](RMS.png)
-
-
 # Ders Notları
 
 Gördüğüm tüm derslerin notlarını ve ödevlerini içerir.İsteyen özgür bir şekilde kullanabilir ve değiştirebilir.Ders Notu eklemek isteyen arkadaşlar Cep telefonlarını kullanarak bu işlemi kolaylıkla yapabilirler.
