@@ -17,3 +17,8 @@ Göndereceğiniz ders notlarında üniversite ayrımı tabiki de yapmıyoruz.Sad
 
 - Eksikler giderildi
 - Yeni ders notları eklendi
+
+## Güncelleme 19 Mayıs 2016
+
+- İngilizce notları yenilendi
+- Yeni ders notları eklendi
